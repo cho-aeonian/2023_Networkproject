@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <haed>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>피코 led 제어 서버</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Dancing+Script&display=swap">
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    </haed>
+
+    <body>
+        <center>
+            <h1>라즈베리파이 피코 LED ON/OFF 웹서버 테스트</h1>
+            <p>제작 : 박초영, 이승주</p>
+
+            <img id="img" src="ledoff.jpc" width="40%">
+            <p id="ledstatus"></p>
+
+            <button type="button" onclick="ledON()">LED ON</button>
+            <button type="button" onclick="ledFF()">LED OFF</button>
+        </center>
+      <script src="script.js"></script>
+    </body>
+</html>
