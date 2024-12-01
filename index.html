@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>피코 LED 제어 서버</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Dancing+Script&display=swap">
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    </head>
+
+    <body>
+        <center>
+            <h1>2023 네트워크 프로젝트 라즈베리파이 LED ON/OFF 웹서버</h1>
+            <p>제작 : 박초영, 이승주</p>
+
+            <img id="img1" src="c:\Users\박초영\OneDrive - 부산소프트웨어마이스터고등학교\그림\스크린샷\스크린샷 2024-12-01 144522.png" width="15%" height="15%" alt="LED OFF" style="display:none;"> 
+            <img id="img2" src="c:\Users\박초영\OneDrive - 부산소프트웨어마이스터고등학교\그림\스크린샷\스크린샷 2024-12-01 144529.png" width="10%" height="10%" alt="LED ON" style="display:none;"> 
+            <p id="ledstatus"></p>
+
+            <button type="button" onclick="ledON()">LED ON</button>
+            <button type="button" onclick="ledOFF()">LED OFF</button>
+        </center>
+
+        <script>
+            function ledON() {
+                //ledON 버튼을 눌렀을 때 LED ON된 사진으로 변경
+                document.getElementById("img2").style.display = "none";
+                document.getElementById("img1").style.display = "block";
+                document.getElementById("ledstatus").textContent = "LED는 켜져 있습니다.";
+            }
+
+            function ledOFF() {
+                //ledOFF 버튼을 눌렀을 때 LED OFF된 사진으로 변경
+                document.getElementById("img1").style.display = "none";
+                document.getElementById("img2").style.display = "block";
+                document.getElementById("ledstatus").textContent = "LED는 꺼져 있습니다.";
+            }
+        </script>
+    </body>
+</html>
