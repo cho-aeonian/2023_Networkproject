@@ -47,3 +47,9 @@ Python
 
 ## 📖 Portfolio
 - [Notion Portfolio](https://www.notion.so/choxaeonian/2023-BSSM-1ccc37e7d0234676a7cc8e844a312cf4)
+
+## 🧑‍🤝‍🧑 팀원
+|학번|이름|역할|
+|------|---|---|
+|1207|박초영|HW, Front-end, Back-end|
+|1214|이승주|HW|
